@@ -1,0 +1,176 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: #fff;
+}
+
+.top-bar {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+nav .search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+nav .search-bar input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 5px;
+  width: 250px;
+}
+
+nav .search-bar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+nav .search-bar img {
+  width: 20px;
+}
+
+nav .nav-icons {
+  display: flex;
+  gap: 10px;
+}
+
+nav .nav-icons img {
+  width: 24px;
+}
+
+  
+  .main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .image-section img {
+    max-width: 400px;
+  }
+  
+  .form-section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .form-section p {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .google-btn {
+    background-color: #4285f4;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  form p {
+    margin-top: 15px;
+  }
+  
+  form p a {
+    color: #ff4d4d;
+    text-decoration: none;
+  }
+  
+  footer {
+    background-color: black;
+    color: white;
+    padding: 40px 100px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-section {
+    max-width: 250px;
+}
+
+.footer-section a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+  

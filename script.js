@@ -22,9 +22,15 @@ $('.multiple-items').slick({
   autoplay: true,
   speed: 800,
   infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 4
+  slidesToShow: 4,
+  slidesToScroll: 5
+});
+$('.categories').slick({
+  autoplay: true,
+  speed: 500,
+  infinite: true,
+  slidesToShow: 6,
+  slidesToScroll: 5,
 });
 
-// Timer
 

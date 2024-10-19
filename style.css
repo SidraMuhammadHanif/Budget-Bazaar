@@ -96,8 +96,8 @@ div.section-1{
     border: none;
   }
   .ui-accordion .ui-accordion-content:hover{
-    background-color: #f8f2f2;
-    color: black;
+    background-color: #030303;
+    color: rgb(255, 255, 255);
   }
   #accordion:hover{
     background-color: #000 ;
@@ -223,10 +223,180 @@ a.categories-link{
     margin-top: 15%;
 }
 .music-img{
-width:60% ;
-background-image: url(Images/boom\ speaker.png);
-background-position: -20px 35%;
-background-repeat: no-repeat;
-background-size:95%;
-box-sizing: content-box;
+    width:60%;
+    background-image: url(Images/boom\ speaker.png);
+    background-position: 0px 35%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 100%;
+    box-shadow:inset 4px 1px 15px 11px grey;
+    outline: #fff6f6;
 }
+.col-2{
+    width: 350px;
+    height: 300px;
+    margin: 25px auto;
+}
+.all-cards{
+    display: flex;
+    flex-wrap:wrap ;
+}
+.all-cards>.card{
+width: 225px;
+height: 200px;
+}
+/* new arrival */
+.wrapper-grid {
+    max-width: 98%;
+    margin: 0 auto;
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.new-arrival.text{
+margin: 2em 0px;
+
+}
+  
+  .one,.two,.three,.four {
+    border-radius: 5px;
+    padding: 1em;
+  }
+  .one {
+    grid-column: 1 /3;
+    grid-row: 1/5;
+    background-image: url(Images/grid-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
+    position: relative;
+
+  }
+  .two {
+    grid-column: 3/5;
+    grid-row: 1/3;
+    background-image: url(Images/woman-grid\(2\).png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-color: #000;
+    position: relative;
+   
+  }
+  .three {
+      grid-column: 3/4;
+      grid-row: 3/5;
+    background-image: url(Images/grid-3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #000;
+    position: relative;
+    
+
+  }
+  .four {
+    grid-column: 4/5;
+    grid-row: 3/5;
+    background-image: url(Images/grid-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+    position: relative;
+    
+  }
+  .wrapper-grid .white-text{
+    color: #fff;
+    max-width: 50%;
+    min-width:120px ;
+    padding: 2% 5px;
+    margin-top: auto;
+  }
+  .white-text{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+  }
+.three .white-text,.four .white-text {
+    max-width: 80%;
+    min-width:120px ;
+    padding: 5% 5px;
+
+  }
+  .white-text p{
+    font-size: smaller;
+    padding: 2% 5px;
+    color: #d7d7d7;
+  }
+  .white-text a{
+    color: #fff;
+  }
+  /* ----round-divs-icons---- */
+  /* section-8-css */
+  .section-8{
+    width: 80%;
+    margin: 10% auto;
+
+  }
+  .round-icons-div{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+ }
+  .fast-delivery>.icon-fast-delivery,.icon-customer-service,.icon-money-back{
+   margin: 0 auto;    
+
+  }
+  .customer-service{
+    margin-left: 8%;
+
+  }
+  .money-back{
+    margin-left: 8%;
+
+  }
+  .icon-fast-delivery{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0);
+    border: 8px solid rgb(174, 172, 172);
+    background-image: url(Images/icon-delivery.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  } 
+  .icon-customer-service{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0);
+    border: 8px solid rgb(174, 172, 172);
+    background-image: url(Images/Icon-Customer\ service.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .icon-money-back{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0);
+    border: 8px solid rgb(174, 172, 172);
+    background-image: url(Images/money-back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .text-fast-delivery,.text-customer-service,.text-money-back{
+    text-align: center;
+    padding: 20px 10px;
+  }
+  .round-icons-div p{
+    font-size: smaller;
+    color: #3c3c3c;
+    padding: 8px 0px;
+}
+/* footer start */
+
+/* footer end */

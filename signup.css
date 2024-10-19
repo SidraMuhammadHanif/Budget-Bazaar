@@ -9,7 +9,7 @@
   }
   
   .image-section img {
-    max-width: 400px;
+    max-width: 600px;
   }
   
   .form-section {
@@ -95,4 +95,21 @@
     text-decoration: none;
     margin-bottom: 10px;
 }
-  
+
+label.error {
+  color: red;
+  font-size: 13px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .login-image img {
+      display: none;
+  }
+}

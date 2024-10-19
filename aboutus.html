@@ -6,6 +6,7 @@
     <title>About Us</title>
     <link rel="stylesheet" href="aboutus.css">
     <link rel="stylesheet" href="header.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -19,7 +20,7 @@
         <nav>
             <div class="logo">Budget Bazar</div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="aboutus.html">About</a></li>
                 <li><a href="signup.html">Sign Up</a></li>
@@ -31,14 +32,14 @@
             <div class="nav-icons">
                 <a href="#"><img src="./images/Wishlist.png" alt="Wishlist"></a>
                 <a href="cart.html"><img src="./images/Cart1.png" alt="Cart"></a>
-                <a href="#"><img src="./images/user.png" alt="User"></a>
+                <a href="login.html"><img src="./images/user.png" alt="User"></a>
             </div>
         </nav>
     </header>
 
 
     <!-- About Section -->
-    <section class="about">
+    <section class="about container">
         <div class="breadcrumb">
             <a href="#">Home</a> / <span>About</span>
         </div>
@@ -53,30 +54,32 @@
                     Exclusive has more than 1 million products to offer, growing at a very fast pace. Exclusive offers a diverse assortment in categories ranging from consumer products.
                 </p>
             </div>
-            <div class="about-image">
-                <img src="./images/shopping.png" alt="Shopping">
+            <div data-aos="fade-left">
+                <div class="about-image">
+                    <img src="./images/shopping.png" alt="Shopping">
+              </div>
             </div>
         </div>
 
         <div class="statistics">
-            <div class="stat-box">
+            <div class="stat-box" data-aos="fade-up">
                 <img src="./images/Services.png" alt="Services">
-                <div class="stat-number">10.5k</div>
+                <div class="stat-number" data-count="10500">0</div>
                 <p>Sellers active on our site</p>
             </div>
-            <div class="stat-box highlight">
+            <div class="stat-box highlight" data-aos="fade-up" data-aos-delay="100">
                 <img src="./images/Services1.png" alt="Services">
-                <div class="stat-number">33k</div>
+                <div class="stat-number" data-count="33000">0</div>
                 <p>Monthly Product Sale</p>
             </div>
-            <div class="stat-box">
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
                 <img src="./images/Services2.png" alt="Services">
-                <div class="stat-number">45.5k</div>
+                <div class="stat-number" data-count="45500">0</div>
                 <p>Customers active on our site</p>
             </div>
-            <div class="stat-box">
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
                 <img src="./images/Services3.png" alt="Services">
-                <div class="stat-number">25k</div>
+                <div class="stat-number" data-count="25000">0</div>
                 <p>Annual Gross Sales</p>
             </div>
         </div>
@@ -92,7 +95,6 @@
                     <a href="#"><img src="./images/Icon-Linkedin.png" alt="LinkedIn"></a>
                 </div>
             </div>
-
             <div class="team-member">
                 <img src="./images/Frame 875.png" alt="Emma Watson">
                 <h4>Emma Watson</h4>
@@ -148,7 +150,10 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="aboutus.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

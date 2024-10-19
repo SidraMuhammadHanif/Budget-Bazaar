@@ -7,7 +7,7 @@
 }
 
 .login-image img {
-    max-width: 400px;
+    max-width: 600px;
 }
 
 .login-form {
@@ -25,14 +25,14 @@
 
 .login-form label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
 .login-form input {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -82,6 +82,11 @@ footer {
     margin-bottom: 10px;
 }
   
+label.error {
+    color: red;
+    font-size: 13px;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

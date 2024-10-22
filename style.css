@@ -69,7 +69,11 @@ body {
   color: #000;
   padding-left: 2em;
 }
+.navbar-items ul li a:hover{
+  text-decoration: underline;
+  color: red;
 
+}
 .input-container input {
   background-image: url(Images/search.png);
   background-position: 97% 8px;

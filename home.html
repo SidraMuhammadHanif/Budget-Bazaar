@@ -5,10 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Budget Bazar</title>
-
+  <!-- favicon-icon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+  <!-- jquery and jquery ui -->
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
@@ -20,6 +24,10 @@
   <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="addtocart.css">
+  <link rel="stylesheet" href="timer.css">
+  <!-- ---AOS Animation--- -->
+  <link rel="stylesheet" href="./aos-master/demo/css/styles.css">
+  <link rel="stylesheet" href="./aos-master/dist/aos.css">
 
 </head>
 
@@ -115,7 +123,7 @@
       <!-- ----- Slick Slider ----- -->
       <div class="wrapper">
         <div>
-          <img src="Images/home page slider one.png " alt="">
+          <img src="Images/home page slider one.webp " alt="">
         </div>
         <div>
           <img src="Images/home-page slider 2.jpg " alt="">
@@ -142,156 +150,280 @@
         <div class="red-text">
           <h4>Today's</h4>
         </div>
-        <h2 class="heading flashsales">Flash Sales</h2>
-        <!-- Flash sales timer -->
-        <span></span>
-      </div>
-      <!-- Slider Flash Sales -->
-      <div class="slider-add-to-carts">
-        <div class="multiple-items">
+        <div class="heading-timer">
+          <h2 class="heading flashsales">Flash Sales</h2>
+          <!-- Flash sales timer -->
+          <span>
+            <!-- timer start -->
 
-          <div class="card">
-            <img src="Images/game.png" alt="the game">
-            <div class="content">
-              <a href="shopping.html" class="cart">Add to cart </a>
-              <p class="product-details">HAVIT HV-G92 Gamepad </p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="Images/chair.png" alt="the chair">
-            <div class="content">
-              <a href="shopping.html" class="cart">Add to cart </a>
-              <p class="product-details">HAVIT HV-G92 Chair </p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="Images/LED.png" alt="the LED">
-            <div class="content">
-              <a href="shopping.html" class="cart">Add to cart </a>
-              <p class="product-details">HAVIT HV-G92 LED </p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="Images/keyboard.png" alt="the keyboard">
-            <div class="content">
-              <a href="shopping.html" class="cart">Add to cart </a>
-              <p class="product-details">HAVIT HV-G92 Keyboard </p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="Images/game.png" alt="the game">
-            <div class="content">
-              <a href="shopping.html" class="cart">Add to cart </a>
-              <p class="product-details">HAVIT HV-G92 Gamepad </p>
-            </div>
-          </div>
+            <div id="clockdiv">
+              <div>
 
+                <!-- Show No. of days -->
+                <span class="days" id="day"></span>
+                <div class="smalltext">Days</div>
+              </div>
+              <div>
 
+                <!-- Show no.of hours -->
+                <span class="hours" id="hour"></span>
+                <div class="smalltext">Hours</div>
+              </div>
+              <div>
+
+                <!-- Show no. of minutes -->
+                <span class="minutes" id="minute"></span>
+                <div class="smalltext">Minutes</div>
+              </div>
+              <div>
+
+                <!-- Show seconds -->
+                <span class="seconds" id="second"></span>
+                <div class="smalltext">Seconds</div>
+              </div>
+            </div>
+            <p id="demo"></p>
+            <!-- timer finish -->
+          </span>
         </div>
-      </div>
-      <a href="shopping.html" class="shopping-page-button">View all products </a>
-      <div class="bottom-border"></div>
-
-      <div class="section-3">
-        <div class="categories-3">
-          <div class="red-text">
-            <h4>Categories</h4>
-          </div>
-          <h2 class="heading category">Browse By Category</h2>
-          <div class="previous-arrow slick-prev">prev-arrow</div>
-          <div class="forward-arrow slick-next">next-arrow</div>
-          <div class="browse-category">
-
-            <div class=" categories">
-              <div class="category-divs">
-
-                <div class="img">
-                  <img src="Images/Category-CellPhone.png" alt="CellPhone">
-                </div>
-                <div class="category-text">
-                  <p>Phones</p>
-                </div>
-              </div>
-              <div class="category-divs">
-                <div class="img">
-                  <img src="Images/Category-Computer.png" alt="Computer">
-                </div>
-                <div class="category-text">
-                  <p>Computer</p>
-                </div>
-              </div>
-              <div class="category-divs">
-                <div class="img">
-                  <img src="Images/Category-SmartWatch.png" alt="SmartWatch">
-                </div>
-                <div class="category-text">
-                  <p>SmartWatch</p>
-                </div>
-              </div>
-              <div class="category-divs">
-                <div class="img">
-                  <img src="Images/Category-Camera.png" alt="Camera">
-                </div>
-                <div class="category-text">
-                  <p>Camera</p>
-                </div>
-              </div>
-              <div class="category-divs">
-                <div class="img">
-                  <img src="Images/Category-Gamepad.png" alt="Gamepad">
-                </div>
-                <div class="category-text">
-                  <p>Gamepad</p>
-                </div>
-              </div>
-              <div class="category-divs">
-
-                <div class="img">
-                  <img src="Images/Category-Headphone.png" alt="Headphone">
-                </div>
-                <div class="category-text">
-                  <p>Headphone</p>
-                </div>
-              </div>
-              <div class="category-divs">
-
-                <div class="img">
-                  <img src="Images/Category-CellPhone.png" alt="CellPhone">
-                </div>
-                <div class="category-text">
-                  <p>Phones</p>
-                </div>
-              </div>
-              <div class="category-divs">
-                <div class="img">
-                  <img src="Images/Category-Computer.png" alt="Computer">
-                </div>
-                <div class="category-text">
-                  <p>Computer</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="bottom-border"></div>
-
-      <!-- section-3 finished -->
-      <!-- section-4 starting from here -->
-      <div class="section4">
-        <div class="red-text">
-          <h4>This Month</h4>
-        </div>
-        <div class="best-selling-products ">
-          <h2 class="heading selling-products">Best Selling Products</h2>
-          <a href="shopping.html" class="shopping-link-btn">View All </a>
-        </div>
-        <!-- Slider selling-products -->
+        <!-- Slider Flash Sales -->
         <div class="slider-add-to-carts">
           <div class="multiple-items">
 
+            <div class="card">
+              <img src="Images/game.png" alt="the game">
+              <div class="content">
+                <a href="shopping.html" class="cart">Add to cart </a>
+                <p class="product-details">HAVIT HV-G92 Gamepad </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Images/chair.png" alt="the chair">
+              <div class="content">
+                <a href="shopping.html" class="cart">Add to cart </a>
+                <p class="product-details">HAVIT HV-G92 Chair </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Images/LED.png" alt="the LED">
+              <div class="content">
+                <a href="shopping.html" class="cart">Add to cart </a>
+                <p class="product-details">HAVIT HV-G92 LED </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Images/keyboard.png" alt="the keyboard">
+              <div class="content">
+                <a href="shopping.html" class="cart">Add to cart </a>
+                <p class="product-details">HAVIT HV-G92 Keyboard </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Images/game.png" alt="the game">
+              <div class="content">
+                <a href="shopping.html" class="cart">Add to cart </a>
+                <p class="product-details">HAVIT HV-G92 Gamepad </p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <a href="shopping.html" class="shopping-page-button">View all products </a>
+        <div class="bottom-border"></div>
+
+        <div class="section-3">
+          <div class="categories-3">
+            <div class="red-text">
+              <h4>Categories</h4>
+            </div>
+            <h2 class="heading category">Browse By Category</h2>
+            <div class="previous-arrow slick-prev">prev-arrow</div>
+            <div class="forward-arrow slick-next">next-arrow</div>
+            <div class="browse-category">
+
+              <div class=" categories">
+                <div class="category-divs div-hover-white">
+
+                  <div class="img">
+                    <img src="Images/Category-CellPhone.png" alt="CellPhone">
+                  </div>
+                  <div class="category-text">
+                    <p>Phones</p>
+                  </div>
+                </div>
+                <div class="category-divs div-2">
+                  <div class="img">
+                    <img src="Images/Category-Computer.png" alt="Computer">
+                  </div>
+                  <div class="category-text">
+                    <p>Computer</p>
+                  </div>
+                </div>
+                <div class="category-divs div-hover-white">
+                  <div class="img">
+                    <img src="Images/Category-SmartWatch.png" alt="SmartWatch">
+                  </div>
+                  <div class="category-text">
+                    <p>SmartWatch</p>
+                  </div>
+                </div>
+                <div class="category-divs div-4">
+                  <div class="img">
+                    <img src="Images/Category-Camera.png" alt="Camera">
+                  </div>
+                  <div class="category-text">
+                    <p>Camera</p>
+                  </div>
+                </div>
+                <div class="category-divs div-hover-white">
+                  <div class="img">
+                    <img src="Images/Category-Gamepad.png" alt="Gamepad">
+                  </div>
+                  <div class="category-text">
+                    <p>Gamepad</p>
+                  </div>
+                </div>
+                <div class="category-divs div-6">
+
+                  <div class="img">
+                    <img src="Images/Category-Headphone.png" alt="Headphone">
+                  </div>
+                  <div class="category-text">
+                    <p>Headphone</p>
+                  </div>
+                </div>
+                <div class="category-divs div-hover-white">
+
+                  <div class="img">
+                    <img src="Images/Category-CellPhone.png" alt="CellPhone">
+                  </div>
+                  <div class="category-text">
+                    <p>Phones</p>
+                  </div>
+                </div>
+                <div class="category-divs div-8">
+                  <div class="img">
+                    <img src="Images/Category-Computer.png" alt="Computer">
+                  </div>
+                  <div class="category-text">
+                    <p>Computer</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="bottom-border"></div>
+
+        <!-- section-3 finished -->
+        <!-- section-4 starting from here -->
+        <div class="section4">
+          <div class="red-text">
+            <h4>This Month</h4>
+          </div>
+          <div class="best-selling-products ">
+            <h2 class="heading selling-products">Best Selling Products</h2>
+            <a href="shopping.html" class="shopping-link-btn">View All </a>
+          </div>
+          <!-- Slider selling-products -->
+          <div class="slider-add-to-carts">
+            <div class="multiple-items">
+
+              <div class="card">
+                <img src="Images/cpu cooler.png" alt="the cooler">
+                <div class="content">
+                  <a href="shopping.html" class="cart">Add to cart </a>
+                  <p class="product-details">HAVIT HV-G92 CPU Cooler </p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="Images/jacket.png" alt="the coat">
+                <div class="content">
+                  <a href="shopping.html" class="cart">Add to cart </a>
+                  <p class="product-details">HAVIT HV-G92 Coat </p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="Images/Bag.png" alt="the Bag">
+                <div class="content">
+                  <a href="shopping.html" class="cart">Add to cart </a>
+                  <p class="product-details">HAVIT HV-G92 Bag </p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="Images/bookshelf.png" alt="the bookshelf">
+                <div class="content">
+                  <a href="shopping.html" class="cart">Add to cart </a>
+                  <p class="product-details">HAVIT HV-G92 RGB bookshelf </p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="Images/Category-Headphone.png" alt="the Headphone">
+                <div class="content">
+                  <a href="shopping.html" class="cart">Add to cart </a>
+                  <p class="product-details">HAVIT HV-G92 RGB Headphone </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- section-4 finished -->
+        <!-- section-5 starting from here -->
+        <div class="section-5">
+          <div class="music-category">
+            <div class="music-text col-1">
+              <a href="shopping.html" class="categories-link">Categories</a>
+              <h2>Enhance Your <span class="music-heading"> Music Experience</span></h2>
+              <!-- timer start -->
+              <!-- Title or heading -->
+              <div id="clockdiv">
+                <div>
+
+                  <!-- Show No. of days -->
+                  <span class="days" id="day"></span>
+                  <div class="smalltext">Days</div>
+                </div>
+                <div>
+
+                  <!-- Show no.of hours -->
+                  <span class="hours" id="hour"></span>
+                  <div class="smalltext">Hours</div>
+                </div>
+                <div>
+
+                  <!-- Show no. of minutes -->
+                  <span class="minutes" id="minute"></span>
+                  <div class="smalltext">Minutes</div>
+                </div>
+                <div>
+
+                  <!-- Show seconds -->
+                  <span class="seconds" id="second"></span>
+                  <div class="smalltext">Seconds</div>
+                </div>
+              </div>
+              <p id="demo"></p>
+
+              <!-- timer finish -->
+              <a href="shopping.html" class="buy-now btn">Buy Now!</a>
+            </div>
+            <div class="music-img col-2">
+              <img src="Images/boom speaker.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- section-5 finished -->
+        <div class="section4">
+          <div class="red-text">
+            <h4>Our Products</h4>
+          </div>
+          <div class="best-selling-products ">
+            <h2 class="heading selling-products">Explore our Products</h2>
+          </div>
+          <div class="all-cards">
             <div class="card">
               <img src="Images/cpu cooler.png" alt="the cooler">
               <div class="content">
@@ -320,40 +452,154 @@
                 <p class="product-details">HAVIT HV-G92 RGB bookshelf </p>
               </div>
             </div>
+
             <div class="card">
-              <img src="Images/Category-Headphone.png" alt="the Headphone">
+              <img src="Images/chair.png" alt="the chair">
               <div class="content">
                 <a href="shopping.html" class="cart">Add to cart </a>
-                <p class="product-details">HAVIT HV-G92 RGB Headphone </p>
+                <p class="product-details">HAVIT HV-G92 Chair </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Images/LED.png" alt="the LED">
+              <div class="content">
+                <a href="shopping.html" class="cart">Add to cart </a>
+                <p class="product-details">HAVIT HV-G92 LED </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Images/keyboard.png" alt="the keyboard">
+              <div class="content">
+                <a href="shopping.html" class="cart">Add to cart </a>
+                <p class="product-details">HAVIT HV-G92 Keyboard </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Images/game.png" alt="the game">
+              <div class="content">
+                <a href="shopping.html" class="cart">Add to cart </a>
+                <p class="product-details">HAVIT HV-G92 Gamepad </p>
+              </div>
+            </div>
+            <a href="shopping.html" class="shopping-page-button">View all products </a>
+          </div>
+        </div>
+        <!-- section-6 finish -->
+        <!-- Section-7 New Arrival -->
+        <div class="new-arrival text">
+          <div class="red-text">
+            <h4>Featured</h4>
+          </div>
+          <div class="best-selling-products ">
+            <h2 class="heading New-Arrival"> New Arrival</h2>
+          </div>
+        </div>
+        <div class="wrapper-grid">
+          <div class="one">
+            <div class="white-text">
+              <h3>Play stations</h3>
+              <p>Black and White version of the PS5 coming out on sale.</p>
+              <a href="Shopping.html">Shop Now</a>
+            </div>
+          </div>
+          <div class="two">
+            <div class="white-text">
+              <h3>Women’s Collections</h3>
+              <p>Featured woman collections that give you another vibe.</p>
+              <a href="Shopping.html">Shop Now</a>
+            </div>
+          </div>
+
+          <div class="three">
+            <div class="white-text">
+              <h3>Speakers</h3>
+              <p>Amazon wireless speakers</p>
+              <a href="Shopping.html">Shop Now</a>
+            </div>
+          </div>
+          <div class="four">
+            <div class="white-text">
+              <h3> Perfume</h3>
+              <p>GUCCI INTENSE OUD EDP</p>
+              <a href="Shopping.html">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- section-7 end here -->
+        <!-- Section-8  customer 1st choice (Round-divs)  -->
+        <div class="section-8">
+          <div class="round-icons-div">
+            <!-- AOS ANIMATION div -->
+            <div class="fast-delivery">
+              <div class="icon-fast-delivery"></div>
+              <div class="text-fast-delivery">
+                <h3>FREE AND FAST DELIVERY</h3>
+                <p>Free delivery for all orders over $140</p>
+              </div>
+            </div>
+            <div class="customer-service">
+              <div class="icon-customer-service"></div>
+              <div class="text-customer-service">
+                <h3>24/7 CUSTOMER SERVICE</h3>
+                <p>Friendly 24/7 customer support</p>
+              </div>
+            </div>
+            <div class="money-back">
+              <div class="icon-money-back"></div>
+              <div class="text-money-back">
+                <h3>24/7 CUSTOMER SERVICE</h3>
+                <p>Friendly 24/7 customer support</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- section-4 finished -->
-      <!-- section-5 starting from here -->
-      <div class="section-5">
-        <div class="music-category">
-          <div class="music-text col-1">
-            <a href="shopping.html" class="categories-link">Categories</a>
-            <h2>Enhance Your <span class="music-heading"> Music Experience</span></h2>
-            <a href="shopping.html" class="buy-now btn">Buy Now!</a>
+        <!-- section-8 end here -->
+        <!-- footer start -->
+        <footer>
+          <div class="footer-content">
+            <div class="footer-section subscribe">
+              <h3>Budget Bazar</h3>
+              <p>Get 10% off your first order</p>
+              <input type="email" placeholder="Enter your email">
+            </div>
+            <div class="footer-section support">
+              <p>112B, Karachi, Pakistan</p>
+              <p>bugdetbazar@gmail.com</p>
+              <p>+111-222-333</p>
+            </div>
+            <div class="footer-section account">
+              <a href="#">My Account</a>
+              <a href="#">Login / Register</a>
+              <a href="#">Cart</a>
+              <a href="#">Wishlist</a>
+            </div>
+            <div class="footer-section quick-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Use</a>
+              <a href="#">FAQ</a>
+            </div>
+            <div class="footer-section download">
+              <p>Download App</p>
+              <img src="./images/AppStore.png" alt="App Store">
+              <img src="./images/googlestorelogo.png" alt="Google Play">
+            </div>
           </div>
-          <div class="music-img col-2"></div>
-        </div>
+          <div class="footer-btm-text">
+            <p>@Copy Write Rimel 2022. All right reserved.</p>
+          </div>
+        </footer>
+
+        <!-- footer end -->
+
       </div>
-      <!-- section-5 finished -->
-
-
-
     </div>
-
-  </div>
   </div>
   </div>
 
 
   <script src="script.js"> </script>
+  <script src="./aos-master/dist/aos.js"></script>
+  <script src="timer.js"></script>
 
 </body>
 

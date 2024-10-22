@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html{
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Assistant", sans-serif;
 
@@ -177,17 +181,22 @@ div.wrapper div>img {
   margin: 20px;
   border-radius: 3px;
   border: 2px solid gainsboro;
+  transition: all 0.8s;
+  cursor: pointer;
 }
 
-.div-hover-white {
-  background-color: rgb(220, 66, 66);
-  color: #f4f2f2;
-}
+
 
 .category-divs img {
   position: relative;
   top: 15px;
   left: 38px;
+  transition: all 0.8s;
+
+}
+.category-divs:hover img {
+  filter: brightness(0) invert(1);
+
 }
 
 .category-text p {
@@ -200,10 +209,7 @@ div.wrapper div>img {
   color: #F5F5F5;
 }
 
-.div-hover-white:hover {
-  background-color: #fefefe;
-  color: #000;
-}
+
 
 .bottom-border {
   border-bottom: 2px solid rgb(232, 230, 230);

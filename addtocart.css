@@ -5,6 +5,7 @@
     font-weight: 400;
     margin: 20px;
     padding: 10px;
+    border-left: 18px solid red;
 }
 .wrapper {
     /* display: flex; */
@@ -22,8 +23,9 @@
     overflow: hidden;
 }
 .card img {
-    width: 100%;
+    width: 80%;
     height: 150px;
+    margin: 0 auto;
 }
 .content{
     width: 100%;

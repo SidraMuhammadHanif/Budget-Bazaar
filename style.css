@@ -311,6 +311,8 @@ a.categories-link {
 .all-cards>.card {
   width: 225px;
   height: 200px;
+  margin: 10px auto;
+
 }
 
 .all-cards>.card img {
